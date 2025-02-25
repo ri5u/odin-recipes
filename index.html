@@ -4,11 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            border: 10px;
+            border-style: solid;
+            border-color: orangered;
+        }
+
+        .odin-recipe-heading {
+            width: 40vw;
+            height: auto;
+            margin: 10px auto;
+            border: 5px;
+            border-style: solid;
+            border-color: aqua;
+            text-align: center;
+            background-color: lightpink;
+            margin-bottom: 20px;
+        }
+
+        .recipe-names {
+            margin: 5px;
+            border: 3px solid black;
+            text-align: center;
+        }
+
+        .recipe { 
+            display: inline-block;
+            width: 10vw;
+            margin: 10px 40px;
+            border: 3px;
+            border-style: solid;
+            border-color: black;
+            padding: 3%;
+            background-size: cover;
+            background-position: center;
+
+        }
+        
+        .recipe span {
+            color: White;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            background: rgba(0,0,0, 0.6);
+            position: relative;
+            
+        }
+        .halwa {
+            background-image: url(./images/gajarHalwa.png);
+        }
+
+        .kheer {
+            background-image: url(./images/kheer.jpg);
+        }
+
+        .saag {
+            background-image: url(./images/saag.webp);
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <a href="./recipes/gajarHalwa.html">Gajar Halwa</a>
-    <a href="./recipes/kheer.html">Kheer</a>
-    <a href="./recipes/saag.html">Indian Saag</a>
+    <div class="odin-recipe-heading"><h1>Odin Recipes</h1></div>
+    <div class="recipe-names">
+        <div class="recipe halwa"><a href="./recipes/gajarHalwa.html"><span>Halwa</span></a></div>
+        <div class="recipe kheer"><a href="./recipes/kheer.html"><span>Kheer</span></a></div>
+        <div class="recipe saag"><a href="./recipes/saag.html"><span>Saag</span></a></div>
+    </div>
 </body>
 </html>
